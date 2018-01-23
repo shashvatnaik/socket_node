@@ -1,7 +1,8 @@
 let socket = io();
 socket.on(`connect`,()=>{
     console.log(`connected`);
-    socket.on;
+   socket.on
+    socket.emit(`gg2`,{data:"gg2data"});
 
 });
 socket.on(`disconnect`,()=>{
@@ -12,4 +13,4 @@ socket.on(`gg`,function(ggdata){
     console.log(ggdata);
 });
 
-socket.emit(`gg2`,{data:"gg2data"});
+
