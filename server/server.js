@@ -19,6 +19,12 @@ io.on(`connection`,(socket)=>{
     socket.on(`disconnect`,()=>{
         console.log(`user disconnected!`);
     });
+
+    setTimeout(()=>{socket.emit(`gg`,{message:"ggwp!"});},3000);
+    socket.on(`gg2`,(data)=>{
+        console.log(data);
+    });
+
 });
 
 const publicPath = path.join(__dirname,'../public');
