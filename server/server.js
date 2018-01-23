@@ -24,6 +24,9 @@ io.on(`connection`,(socket)=>{
     socket.on(`gg2`,(data)=>{
         console.log(data);
     });
+    socket.on(`ggwp`,(data)=>{
+        io.emit(`ggwp`,data)
+    });
 
 });
 

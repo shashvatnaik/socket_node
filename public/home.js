@@ -12,5 +12,8 @@ socket.on(`gg`,function(ggdata){
     alert(`gg`);
     console.log(ggdata);
 });
+socket.on(`ggwp`,(data)=>{
+    console.log(data);
+});
 
 
